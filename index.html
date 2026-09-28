@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Combat Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">⚔️ Fantasy Combat Arena</div>
+        <div class="status" id="gameStatus">READY TO FIGHT</div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>FANTASY COMBAT ARENA</h1>
+            <p>Choose your warrior and defeat the enemy!</p>
+        </section>
+
+        <section class="arena">
+
+            <!-- PLAYER -->
+            <div class="fighter player">
+                <div class="character">
+                    <div class="character-icon">🧙</div>
+                    <h2 id="playerName">Wizard</h2>
+                    <p class="role">HERO</p>
+                </div>
+
+                <div class="health-box">
+                    <div class="health-label">
+                        <span>Health</span>
+                        <span id="playerHealthText">100 / 100</span>
+                    </div>
+
+                    <div class="health-bar">
+                        <div id="playerHealth" class="health-fill"></div>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div>
+                        <span>⚔️</span>
+                        <strong id="playerAttack">20</strong>
+                        <small>Attack</small>
+                    </div>
+
+                    <div>
+                        <span>🛡️</span>
+                        <strong>10</strong>
+                        <small>Defense</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="versus">VS</div>
+
+            <!-- ENEMY -->
+            <div class="fighter enemy">
+
+                <div class="character">
+                    <div class="character-icon">👹</div>
+                    <h2>Dark Orc</h2>
+                    <p class="role enemy-role">ENEMY</p>
+                </div>
+
+                <div class="health-box">
+                    <div class="health-label">
+                        <span>Health</span>
+                        <span id="enemyHealthText">100 / 100</span>
+                    </div>
+
+                    <div class="health-bar">
+                        <div id="enemyHealth" class="health-fill enemy-health"></div>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div>
+                        <span>⚔️</span>
+                        <strong>15</strong>
+                        <small>Attack</small>
+                    </div>
+
+                    <div>
+                        <span>🛡️</span>
+                        <strong>8</strong>
+                        <small>Defense</small>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CONTROLS -->
+        <section class="controls">
+
+            <h2>Choose Your Action</h2>
+
+            <div class="buttons">
+
+                <button id="attackBtn" class="action attack">
+                    ⚔️ Attack
+                </button>
+
+                <button id="specialBtn" class="action special">
+                    🔥 Special Attack
+                </button>
+
+                <button id="healBtn" class="action heal">
+                    ❤️ Heal
+                </button>
+
+            </div>
+
+            <button id="restartBtn" class="restart">
+                🔄 Restart Battle
+            </button>
+
+        </section>
+
+        <!-- BATTLE LOG -->
+        <section class="battle-log">
+
+            <h2>📜 Battle Log</h2>
+
+            <div id="log">
+                <p>⚔️ The battle is about to begin...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Fantasy Combat Arena | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
